@@ -1,0 +1,4 @@
+输入git config --system --unset credential.helper命令，作用就是清空本地保存的用户名和密码
+
+要以管理员身份打开，否则可能会:
+error: could not lock config file C:/Program Files/Git/mingw64/etc/gitconfig: Permission denied
