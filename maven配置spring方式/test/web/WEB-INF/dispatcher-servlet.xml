@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!-- 非注解 处理器映射器 http://localhost:8080/helloWorld.form-->
+    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping" />
+    <!-- 视图解析器 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" />
+    <!-- 一个可以被url 映射的 Handler 的 bean， 供处理器映射器查找-->
+    <bean name="/helloWorld.form" class="com.study.springmvc.controller.HelloWorldController" />
+
+</beans>
