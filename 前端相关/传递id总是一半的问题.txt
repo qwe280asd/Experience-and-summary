@@ -1,0 +1,4 @@
+$("#"+tdId).append("<select style=\"width: 50%\" name=\"curStatus\" id='"+selectId+"' onchange=\"changeScore('"+officeInfo.id+"',this.value)\"></select>");
+
+
+这是jq传参的时候数位会传不全，需要加 '' 将其在内部转换为string才可以保证数据的完整性
