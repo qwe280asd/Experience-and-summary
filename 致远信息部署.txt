@@ -1,0 +1,11 @@
+致远系统登录:
+http://113.140.67.203:3088/ 
+马广威/123456
+admin1/seeyon2019
+system/seeyon2019  -->发送下线消息的时候使用 ： system 登录-->服务停止通知 -->取消掉“时间到后自动关闭服务”前面的对勾
+
+致远系统部署(远程桌面配置):
+113.140.67.203:10001
+administrator/sunnyit@123
+
+系统文件目录: E:\Seeyon\G6\ApacheJetspeed\webapps\seeyon\WEB-INF
