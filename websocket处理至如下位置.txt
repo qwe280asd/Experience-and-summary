@@ -1,0 +1,17 @@
+https://blog.csdn.net/lnkToKing/article/details/78341204
+
+
+https://segmentfault.com/a/1190000007853460
+https://segmentfault.com/a/1190000007853460  ===================important
+
+
+https://blog.csdn.net/lemonzone2010/article/details/26756797
+
+
+
+MissingSessionUserException: No "user" header in message
+
+https://cloud.tencent.com/developer/ask/139037
+
+rabbitmq:
+https://blog.csdn.net/kangguang/article/details/104555546?depth_1-utm_source=distribute.pc_relevant.none-task&utm_source=distribute.pc_relevant.none-task
