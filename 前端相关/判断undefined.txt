@@ -1,0 +1,10 @@
+if(typeof map !==  'undefined'){
+        if (cookieStyle[12] === "darkbule") {
+        map.setMapStyle('amap://styles/darkblue');
+        }
+        if (cookieStyle[12] === "normal") {
+            map.setMapStyle('amap://styles/normal');
+        }
+    }
+
+’‚—˘≈–∂œ
