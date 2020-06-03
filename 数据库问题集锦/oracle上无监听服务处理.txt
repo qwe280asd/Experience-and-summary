@@ -1,0 +1,21 @@
+https://blog.csdn.net/e_wsq/article/details/7244098
+
+打开终端
+
+切换帐户
+
+# su - oracle
+
+启动监听
+
+$ lsnrctl start
+
+关闭监听
+
+$ lsnrctl stop
+
+
+
+切换帐户一定要加 "-"
+
+否则会出现：   bash:lsnrctl:command not found.错误
