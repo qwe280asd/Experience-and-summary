@@ -1,0 +1,7 @@
+1引入 ：
+<script type="text/javascript" src="${path}/ajax.do?managerName=qiyuesuoManager"></script>
+
+2 ：实例化对象
+var qys = new qiyuesuoManager();
+
+3：再执行方法

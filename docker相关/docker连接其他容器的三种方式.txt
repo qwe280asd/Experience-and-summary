@@ -1,0 +1,5 @@
+https://www.cnblogs.com/shenh/p/9714547.html
+
+方式一、虚拟ip访问
+方式二、link
+方式三、创建bridge网络

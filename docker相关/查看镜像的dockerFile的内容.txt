@@ -1,0 +1,6 @@
+docker history weblogic:latest
+
+²é¿´ÏêÏ¸µÄ£º
+docker history weblogic:latest --no-trunc
+
+https://jingyan.baidu.com/article/9faa723170a0f8063d28cb65.html

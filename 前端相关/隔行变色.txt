@@ -1,0 +1,3 @@
+.CoalFiredPlan:nth-child(even){
+        background-color: #0a6aa1;
+    }

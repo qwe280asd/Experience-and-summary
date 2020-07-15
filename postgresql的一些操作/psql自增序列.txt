@@ -1,0 +1,8 @@
+DROP SEQUENCE IF EXISTS "coalchp_type_id_seq";
+CREATE SEQUENCE "coalchp_type_id_seq"
+ INCREMENT 1
+ MINVALUE 1
+ MAXVALUE 9223372036854775807
+ START 9
+ CACHE 1;
+SELECT setval('"public"."coalchp_type_id_seq"', 9, true);
