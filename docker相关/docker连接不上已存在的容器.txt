@@ -1,0 +1,10 @@
+https://www.qedev.com/cloud/210147.html
+
+docker network ls
+此命令列出所有docker网络。 docker-compose将在运行docker-compose up时创建一个新的网络。在我的情况下，网络被命名为myapp_default。
+
+Note: Your app’s network is given a name based on the “project name”, which is based on the name of the directory it lives in. You can override the project name with either the –project-name flag or the COMPOSE_PROJECT_NAME environment variable. 07000
+
+因此，链接到这些容器的正确方法是
+
+docker run --link my_app_mq_1:mq --link my_app_db_1:db -it --net myapp_default worker
