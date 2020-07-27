@@ -1,0 +1,1 @@
+flask-sqlacodegen 'postgresql://postgres:postsqldev@127.0.0.1:5432/postgres' --tables gaspowergeneration_boiler_of_pts --outfile "table.py"  --flask

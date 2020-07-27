@@ -1,0 +1,8 @@
+https://blog.csdn.net/BackZero333/article/details/103943952/
+
+然后配置多个SpringApplication启动项
+复制多个springBootApplication,然后在VM option项中填入：
+-Dspring.profiles.active=application-XXX.yml文件的“-”后面的名称
+如-Dspring.profiles.active=8100
+然后，勾选上右上角的Allow parallel run 保存即可。
+最后逐个启动即可实现Eureka集群的启动。
