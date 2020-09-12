@@ -1,0 +1,8 @@
+import traceback
+
+
+try:
+    raise ConnectionError
+
+except:
+    traceback.print_exc()   # 捕获异常, 并打印全面的异常信息.

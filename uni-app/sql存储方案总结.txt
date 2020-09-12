@@ -1,0 +1,5 @@
+https://ask.dcloud.net.cn/article/id-37200__page-2
+
+plus.storage:
+https://ask.dcloud.net.cn/article/37071
+https://www.html5plus.org/doc/zh_cn/storage.html#plus.storage.setItemAsync

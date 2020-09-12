@@ -1,0 +1,17 @@
+redis无密码登录：
+https://blog.csdn.net/baiboya/article/details/80891158
+在redis的配置文件redis.conf中，Redis3.2加入的新特性，开启保护模式。即开启了protected-mode，默认值为
+
+protected-mode =yes
+
+是说redis只允许本机登录。
+
+这样登录的前提是要设置密码，即要requirepass属性，
+
+requirepass = 你设置的密码
+
+如要无密码登录，就要设置protected-mode =no ，即可
+
+============
+或者也可以创建docker容器:
+docker run -p 6379:6379 -v $PWD/data:/data --name redis -d redis redis-server --protected-mode no
