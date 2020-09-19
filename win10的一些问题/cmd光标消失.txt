@@ -1,0 +1,3 @@
+https://blog.csdn.net/royla/article/details/105880533
+
+在cmd界面下，输入中文后，按shift，拼音变成英文的同时，光标就出现了。
