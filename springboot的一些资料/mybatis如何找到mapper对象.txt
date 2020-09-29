@@ -1,0 +1,13 @@
+https://blog.csdn.net/f45056231p/article/details/83817740
+
+1. mapper对象在可以通过注解@Mapper和@MapperScan标注
+2. mapper.xml 需要在application.yml里进行配置
+
+# MyBatis配置
+mybatis:
+  # 搜索指定包别名
+  type-aliases-package:
+  # 配置mapper的扫描，找到所有的mapper.xml映射文件
+  mapper-locations:
+  # 加载全局的配置文件
+  configuration:
