@@ -1,0 +1,8 @@
+FROM maven:3.5.4-jdk-8
+
+MAINTAINER mmq
+
+EXPOSE 8080
+
+# …Ë÷√ª∑æ≥±‡¬ÎUTF-8
+ENV LANG C.UTF-8

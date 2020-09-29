@@ -1,0 +1,108 @@
+version: '3'
+services:
+  api:
+    container_name: bangdai-api
+    restart: always
+    build:
+      context: ./
+      dockerfile: ./bangdai/DockerFile-API
+    working_dir: /bangdai
+    environment:
+      TZ: Asia/Shanghai
+      MYSQL_DBNAME: bangdai
+      MYSQL_HOST: bangdai-mysql
+      MYSQL_PORT: 3306
+      MYSQL_USER: root
+      MYSQL_PASSWORD: 12345678
+      REDIS_HOST: bangdai-redis
+      REDIS_PORT: 6379
+      REDIS_PASSWORD: Wayber2020
+      UPLOADFILE_PATH: /home/bangdai/uploadPath
+      serverHost: http://114.115.179.0:8080
+      frontHost: http://114.115.179.0
+      RABBITMQ_HOST: bangdai-rabbitmq
+      RABBITMQ_USERNAME: admin
+      RABBITMQ_PASSWORD: Wayber2020
+      RABBITMQ_PORT: 5672
+    volumes:
+      - ./bangdai:/bangdai
+      - ./bangdai/uploadPath:/home/bangdai/uploadPath
+      - /root/.m2:/root/.m2
+    ports:
+      - "8080:8080"
+    networks:
+      - bangdai_net
+    depends_on:
+      - mysql
+      - redis
+      - rabbitmq
+    command: mvn clean spring-boot:run -Dspring-boot.run.profiles=druid '-Dmaven.test.skip=true'
+
+  mysql:
+    container_name: bangdai-mysql
+    image: mysql/mysql-server:5.7
+    environment:
+      MYSQL_DATABASE: bangdai
+      MYSQL_ROOT_PASSWORD: 12345678
+      MYSQL_ROOT_HOST: '%'
+    command:
+      --character-set-server=utf8mb4
+      --collation-server=utf8mb4_general_ci
+      --explicit_defaults_for_timestamp=true
+      --lower_case_table_names=1
+      --max_allowed_packet=128M
+      --sql-mode="STRICT_TRANS_TABLES,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION,NO_ZERO_DATE,NO_ZERO_IN_DATE,ERROR_FOR_DIVISION_BY_ZERO"
+    ports:
+      - "3306:3306"
+    networks:
+      - bangdai_net
+    volumes:
+      - "./mysql/initsql:/docker-entrypoint-initdb.d/"
+      - "./mysql/conf:/etc/mysql/mysql.conf.d/"
+      - "./mysql/data:/var/lib/mysql"
+    restart: always
+
+  nginx_web:
+    container_name: bangdai-nginx-web
+    restart: always
+    build:
+      context: ./
+      dockerfile: ./nginx/DockerFile-NGINX
+    environment:
+      TZ: Asia/Shanghai
+    volumes:
+      - ./bangdai-vue/node_modules:/bangdai-vue/node_modules
+      - ./nginx/html:/usr/share/nginx/html
+    ports:
+      - "80:80"
+    networks:
+      - bangdai_net
+    depends_on:
+      - api
+
+  redis:
+    image: redis
+    container_name: bangdai-redis
+    command: redis-server --requirepass Wayber2020
+    ports:
+      - "6379:6379"
+    networks:
+      - bangdai_net
+
+  rabbitmq:
+    image: rabbitmq:management-alpine
+    container_name: bangdai-rabbitmq
+    environment:
+      - RABBITMQ_DEFAULT_USER=admin
+      - RABBITMQ_DEFAULT_PASS=Wayber2020
+    restart: always
+    networks:
+      - bangdai_net
+    volumes:
+      - ./rabbitmq:/var/lib/rabbitmq
+    ports:
+      - "15672:15672"
+      - "5672:5672"
+networks:
+  bangdai_net:
+    driver: bridge
