@@ -1,0 +1,6 @@
+在安装插件的时候可能会遇到，搜索不到的情况，毕竟有墙
+
+可以选择从官网下载，不过注意版本要能一致（和idea的版本一致）
+
+
+以Lombok为例：https://plugins.jetbrains.com/plugin/6317-lombok/versions/

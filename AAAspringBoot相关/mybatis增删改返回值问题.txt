@@ -1,0 +1,13 @@
+https://www.cnblogs.com/ZTPX/p/10552512.html
+
+
+
+在使用mybatis的过程中对执行sql的返回值产生疑问，顺手记录一下。
+
+结论：
+
+insert：   插入n条记录，返回影响行数n。（n>=1，n为0时实际为插入失败）
+
+update：更新n条记录，返回影响行数n。（n>=0）
+
+delete： 删除n条记录，返回影响行数n。（n>=0）

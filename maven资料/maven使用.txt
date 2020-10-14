@@ -1,0 +1,6 @@
+
+repositories：
+https://www.cnblogs.com/panchanggui/p/11009491.html
+
+SNAPSHOT：快照
+https://www.runoob.com/maven/maven-snapshots.html

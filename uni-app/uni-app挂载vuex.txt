@@ -1,0 +1,5 @@
+如何在uni-app使用vuex：
+https://www.jianshu.com/p/c288b8e6067c
+
+uni-app如何将vuex模块化：
+https://www.jianshu.com/p/b4d8a08f596e

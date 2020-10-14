@@ -1,0 +1,3 @@
+import org.springframework.beans.BeanUtils;
+
+BeanUtils.copyProperties(源对象, 目标对象);

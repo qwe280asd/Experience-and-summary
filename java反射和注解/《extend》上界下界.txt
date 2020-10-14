@@ -1,0 +1,8 @@
+https://www.cnblogs.com/cangqinglang/p/11626410.html
+
+Plate<？ extends Fruit>
+翻译成人话就是：一个能放水果以及一切是水果派生类的盘子。再直白点就是：啥水果都能放的盘子。这和我们人类的逻辑就比较接近了。
+Plate<？ extends Fruit>和Plate<Apple>最大的区别就是：Plate<？ extends Fruit>是Plate<Fruit>以及Plate<Apple>的基类。
+直接的好处就是，我们可以用“苹果盘子”给“水果盘子”赋值了
+
+

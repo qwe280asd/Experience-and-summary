@@ -1,0 +1,29 @@
+@ConfigurationProperties 的使用：获取配置文件中的数据，并实例化到对象里
+https://www.cnblogs.com/flydean/p/12680308.html
+
+@ConditionalOnExpression("!'${ignore}'.isEmpty()")   当括号里的数据为true时才能使用
+https://www.cnblogs.com/sonofelice/p/6151112.html
+
+@NoArgsConstructor  ：创建无参构造函数
+https://www.hangge.com/blog/cache/detail_2493.html
+
+@PropertySource  ：指定具体使用哪个配置文件
+@ConfigurationProperties(prefix = "aliyun.bankscan")  指定配置文件的前缀
+https://blog.csdn.net/swpu_ocean/article/details/79243591
+
+@ControllerAdvice ：全局异常处理，系统哪里遇到异常，会在这里进行处理
+https://blog.51cto.com/chenhva/2394065
+
+
+@ResponseBody ：让controller返回数据能够在页面上显示，实现回显效果
+https://blog.csdn.net/u011066470/article/details/88087428
+
+@ResponseStatus ：变更返回给前端的状态码
+https://blog.csdn.net/Arthur_Holmes/article/details/108667593
+
+@ContextConfiguration({"classpath:spring/spring-dao.xml"}) ：将class路径里的所有.xml文件都包括进来
+https://www.cnblogs.com/bihanghang/p/10023759.html
+
+@Qualifier : 当继承或者实现同样的父类时候，要通过@Autowired注入，spring框架不知道注入哪个，
+所以需要通过@Qualifier("service")进行补偿
+https://www.cnblogs.com/leeego-123/p/10734330.html
