@@ -1,0 +1,13 @@
+version: '3.1'
+services:
+  db:
+    image: postgres:10.10
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: postsqldev
+      POSTGRES_USER: postgres
+      PGDATA: E:\docker\data\postgres
+    volumes:
+      - E:\docker\data:/var/lib/postgresql/data

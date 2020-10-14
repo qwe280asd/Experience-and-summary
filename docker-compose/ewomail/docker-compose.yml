@@ -1,0 +1,25 @@
+version: '2'
+services:
+       ewomail:
+          container_name : ewomail
+          restart : always
+          image : bestwu/ewomail
+          hostname : mail.dowhere.com
+          volumes:
+             - `pwd`/mysql/ : /ewomail/mysql/data/
+             - `pwd`/vmail/ : /ewomail/mail/
+             - `pwd`/ssl/certs/ : /etc/ssl/certs/
+             - `pwd`/ssl/private/ : /etc/ssl/private/
+             - `pwd`/rainloop : /ewomail/www/rainloop/data
+             - `pwd`/ssl/dkim/ : /ewomail/dkim/
+          ports:
+             -  25:25
+             -  109:109
+             -  110:110
+             -  143:143
+             -  465:465
+             -  587:587
+             -  993:993
+             -  995:995
+             -  80:80
+             -  9090:8080
