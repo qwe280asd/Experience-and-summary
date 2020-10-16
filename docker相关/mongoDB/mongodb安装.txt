@@ -1,0 +1,7 @@
+https://www.runoob.com/docker/docker-install-mongodb.html
+
+下载：
+docker pull mongo:latest
+
+运行容器：
+docker run -itd --name mongo -p 27017:27017 mongo --auth

@@ -1,0 +1,2 @@
+@CrossOrigin
+跨域需要添加此注解

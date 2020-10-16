@@ -1,0 +1,7 @@
+https://my.oschina.net/mzdbxqh/blog/718748
+
+jfinal文档：
+http://www.jfinal.com/doc/3-1
+
+jafinal的配置加载（PropKit）：
+https://blog.csdn.net/u011955525/article/details/107619976

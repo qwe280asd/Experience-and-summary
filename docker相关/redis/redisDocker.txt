@@ -1,0 +1,1 @@
+docker run -p 6379:6379 -v ./data:/data --name redis -d redis redis-server --protected-mode no
