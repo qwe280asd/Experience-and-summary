@@ -1,0 +1,6 @@
+
+vuex的相关操作
+https://blog.csdn.net/x550392236/article/details/80668263
+
+vue的生命周期函数
+https://www.jianshu.com/p/4d3e554269c1

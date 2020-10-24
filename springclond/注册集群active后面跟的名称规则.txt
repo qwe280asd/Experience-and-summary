@@ -6,3 +6,7 @@ https://blog.csdn.net/BackZero333/article/details/103943952/
 如-Dspring.profiles.active=8100
 然后，勾选上右上角的Allow parallel run 保存即可。
 最后逐个启动即可实现Eureka集群的启动。
+
+
+调用的启动服务相关操作：
+https://blog.csdn.net/github_39577257/article/details/81842234

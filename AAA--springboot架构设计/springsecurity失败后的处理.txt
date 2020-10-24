@@ -1,0 +1,27 @@
+AuthenticationEntryPoint ：
+https://blog.csdn.net/weixin_34010566/article/details/92315781
+
+
+/**
+ * 修改默认AuthenticationEntryPoint
+ */
+@Component
+@Slf4j
+public class MyAuthenticationEntryPoint implements AuthenticationEntryPoint {
+
+    @Override
+    public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException e) throws IOException, ServletException {
+
+        log.error("请求地址：{},{}",request.getRequestURI(),e.getMessage());
+        e.printStackTrace();
+        Throwable cause = e.getCause();
+        response.setHeader("Content-Type", "application/json;charset=UTF-8");
+        if(cause instanceof InvalidTokenException){
+            response.getWriter().write(JSON.toJSONString(R.fail("身份验证失败")));
+        }else if(e instanceof InsufficientAuthenticationException){
+            response.getWriter().write(JSON.toJSONString(R.fail("权限不足")));
+        } else {
+            response.getWriter().write(JSON.toJSONString(R.fail(e.getMessage())));
+        }
+    }
+}
