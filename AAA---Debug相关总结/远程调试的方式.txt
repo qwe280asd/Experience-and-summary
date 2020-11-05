@@ -1,0 +1,1 @@
+java -jar -agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=64057 remote-debug-1.0-SNAPSHOT.jar
