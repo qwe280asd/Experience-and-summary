@@ -1,2 +1,5 @@
 https://www.cnblogs.com/handongxue/p/13224484.html
 
+在多表联查的时候注意顺序：
+Aggregation aggregation = Aggregation.newAggregation(lookupToLots,match1,sort,unwind,project);
+

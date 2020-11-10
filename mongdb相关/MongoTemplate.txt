@@ -2,5 +2,8 @@
 相关查询：
 https://blog.csdn.net/yzh_1346983557/article/details/83146931?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param
 
-springboot中mongodb的联表查询
+springboot中mongodb的联表查询（两表关联）
 https://blog.csdn.net/pp3736245/article/details/100582420
+
+三表关联：
+https://blog.csdn.net/hybluck/article/details/106907263?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-2.channel_param
