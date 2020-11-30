@@ -16,3 +16,15 @@ https://blog.csdn.net/zhang135123/article/details/85273957?utm_medium=distribute
 
 mongoTemplate的增删改查操作：
 https://blog.csdn.net/leinminna/article/details/101277443
+
+
+mongoTemplate的分页：
+https://www.jianshu.com/p/78b96ca40927
+
+mongoTemplate的连表操作全：
+https://www.it1352.com/966394.html
+LookupOperation lookupOperation = LookupOperation.newLookup()
+    .from("places")
+    .localField("address.location.place._id")    ===============  主表字段
+    .foreignField("_id")   ==================== 次表字段
+    .as("address.location.place");
