@@ -28,3 +28,6 @@ LookupOperation lookupOperation = LookupOperation.newLookup()
     .localField("address.location.place._id")    ===============  主表字段
     .foreignField("_id")   ==================== 次表字段
     .as("address.location.place");
+
+mongoTemplate 加减乘除操作：
+https://blog.csdn.net/quietlystaywithyou/article/details/85297104
