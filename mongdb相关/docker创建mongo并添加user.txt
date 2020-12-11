@@ -9,7 +9,7 @@ docker exec -it 4abc1e6e12bd mongo admin
 use xxx  (使用xxx数据库)
 
 db.createUser({ user: 'admin', pwd: '密码', roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] });
-
+db.createUser({ user: 'qwe280asd2', pwd: 'asd280qwe2', roles: [ { role: "dbOwner", db: "chengxian" } ] });
 进行身份认证
 db.auth("admin","密码");
 
