@@ -1,0 +1,8 @@
+https://blog.csdn.net/janson_lin/article/details/102498201
+
+orderBy()
+orderDesc()
+orderByAsc()
+
+.orderAsc(Arrays.asList(new String[] {"age"})
+SELECT id AS id,`name`,email,gender,age FROM employee WHERE (gender = ? AND name LIKE ?) ORDER BY age DESC
