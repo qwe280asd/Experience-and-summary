@@ -1,0 +1,9 @@
+
+websocket连接 : 
+https://blog.csdn.net/weixin_43343144/article/details/92998467?utm_medium=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.control&depth_1-utm_source=distribute.pc_relevant_t0.none-task-blog-BlogCommendFromMachineLearnPai2-1.control
+
+uni-app中使用webSocket， 防止长时间连接导致连接中断
+https://blog.csdn.net/qq_40651168/article/details/104768969
+
+springboot的websocket连接:
+https://www.cnblogs.com/xuwenjin/p/12664650.html

@@ -1,0 +1,11 @@
+
+创建带密码的docker容器：
+https://cloud.tencent.com/developer/article/1352195
+redis:
+  image: redis
+  container_name: my_redis
+  command: redis-server --requirepass yourpassword
+  ports:
+    - "6379:6379"
+  volumes:
+    - ./data:/data
