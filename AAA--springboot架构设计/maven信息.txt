@@ -1,0 +1,11 @@
+在导入maven信息的时候注意顺序，否则会爆红
+
+例子: 要是websocket在web之前，它会爆错
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-web</artifactId>
+</dependency>
+<dependency>
+	<groupId>org.springframework.boot</groupId>
+	<artifactId>spring-boot-starter-websocket</artifactId>
+</dependency>
