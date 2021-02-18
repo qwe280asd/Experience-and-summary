@@ -1,0 +1,9 @@
+保存训练好的模型的代码如下：sess = tf.Session()
+saver = tf.train.Saver()
+model_path = "D:\sample\model.ckpt"
+save_path = saver.save(sess, model_path)
+
+使用时，代码如下:saver = tf.train.Saver()
+saver.restore(sess, "D:\sample\model.ckpt")
+result = sess.run(y, feed_dict={x: data})
+y即为输出的结果。
