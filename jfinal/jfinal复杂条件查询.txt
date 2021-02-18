@@ -1,0 +1,15 @@
+ public List<Record> queryLastedAppVersionNew(int limit,String category,String type){
+        StringBuffer sql = new StringBuffer();
+        sql.append("select * from app_update_log where status=1 ");
+        if (category != null) {
+            sql.append(" and category = '").append(category).append("'");
+        }
+
+        if (type != null) {
+            sql.append(" and type = '").append(type).append("'");
+        }
+        sql.append(" order by id desc limit ").append(limit);
+        System.out.println(sql.toString());
+        return Db.find(sql.toString());
+//        return Db.find(sql,category, type,limit);
+    }
