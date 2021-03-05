@@ -1,3 +1,6 @@
+mongoTemplate相关实例：
+https://www.jianshu.com/p/a576499769ae
+
 
 相关查询：
 https://blog.csdn.net/yzh_1346983557/article/details/83146931?utm_medium=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param&depth_1-utm_source=distribute.pc_relevant.none-task-blog-BlogCommendFromMachineLearnPai2-1.channel_param

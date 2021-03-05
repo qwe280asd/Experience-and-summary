@@ -1,5 +1,6 @@
 docker pull mongo
 
+docker run -p 27017:27017 -v /data/mongo:/data/db --name docker_mongodb -d mongo
 docker run -p 27017:27017 -v /tmp/db:/data/db -d mongo
 
 docker ps
@@ -9,9 +10,11 @@ docker exec -it 4abc1e6e12bd mongo admin
 use xxx  (使用xxx数据库)
 
 db.createUser({ user: 'admin', pwd: '密码', roles: [ { role: "userAdminAnyDatabase", db: "admin" } ] });
-db.createUser({ user: 'qwe280asd2', pwd: 'asd280qwe2', roles: [ { role: "dbOwner", db: "chengxian" } ] });
+db.createUser({ user: 'qwe280asd', pwd: 'asd280qwe', roles: [ { role: "dbOwner", db: "chengxian" } ] });
 进行身份认证
 db.auth("admin","密码");
+
+db.createUser({user:"qwe280asd",pwd:"asd280qwe",roles:["dbAdmin"]})
 
 详细:
 https://www.cnblogs.com/xiaostudy/p/11163234.html
